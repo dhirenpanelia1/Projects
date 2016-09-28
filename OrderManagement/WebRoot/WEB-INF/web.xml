@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>OrderManagement</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- Servlet Names -->
+  
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.inhousedeveloper.servlets.LoginServlet</servlet-class>
+  </servlet>
+  
+  
+  <servlet>
+    <servlet-name>SignupServlet</servlet-name>
+    <servlet-class>com.inhousedeveloper.servlets.SignupServlet</servlet-class>
+  </servlet>
+  
+  
+  <servlet>
+    <servlet-name>AddMenuItemToOrderServlet</servlet-name>
+    <servlet-class>com.inhousedeveloper.servlets.AddMenuItemToOrderServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>ShowUserOrderServlet</servlet-name>
+    <servlet-class>com.inhousedeveloper.servlets.ShowUserOrderServlet</servlet-class>
+  </servlet>
+  
+  
+  
+  
+  
+  <!-- Mappings -->
+  
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/home.html</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>SignupServlet</servlet-name>
+    <url-pattern>/userhome.html</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>AddMenuItemToOrderServlet</servlet-name>
+    <url-pattern>/addMenutItemToOrder.html</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>ShowUserOrderServlet</servlet-name>
+    <url-pattern>/orders.html</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+</web-app>
